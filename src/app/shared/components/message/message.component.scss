@@ -1,0 +1,16 @@
+@use "../../styles/mixins/text.scss" as text;
+@import "../../styles/colors.scss";
+
+.message {
+  width: 35vw;
+
+  &__text {
+    @include text.text-font();
+    padding: 10px;
+  }
+
+  &__sender {
+    @include text.text-font(16px, $primary-blue);
+    margin-bottom: 20px;
+  }
+}

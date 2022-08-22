@@ -1,0 +1,31 @@
+@use "./shared/styles/colors.scss";
+@use "./shared/styles/mixins/text.scss";
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px 1fr 1fr 1fr;
+}
+
+header {
+  height: 50px;
+  background-color: colors.$primary-purple;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  @include text.text-font(24px, white);
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+aside {
+  background-color: colors.$primary-purple;
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+.content {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}

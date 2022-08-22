@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MessageComponent } from './shared/components/message/message.component';
-import { MainComponent } from './pages/main/main.component';
+import { AuthService } from './core/services/auth.service';
+import { SocketService } from './core/services/socket.service';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [SocketService, AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

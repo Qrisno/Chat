@@ -1,12 +1,7 @@
-<app-message username="nini kristesiashvili">
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quibusdam
-  corporis blanditiis magnam minus nostrum cum! Placeat ipsum aspernatur
-  tempora. Ab porro vel quas consequatur nulla excepturi odit. Provident
-  necessitatibus animi ab libero.
-</app-message>
-
-<app-message [username]="id.toString()" *ngFor="let message of messages">
-  {{ message }}
-</app-message>
+<div class="message-box">
+  <app-message [username]="id.toString()" *ngFor="let message of messages">
+    {{ message }}
+  </app-message>
+</div>
 
 <app-message-box></app-message-box>

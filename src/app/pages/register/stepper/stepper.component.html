@@ -1,0 +1,7 @@
+<app-step
+  [isFinished]="step.validity"
+  (click)="onStepChange(step)"
+  *ngFor="let step of steps"
+>
+  {{ step.id }}
+</app-step>

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthService } from './core/services/auth.service';
 import { SocketService } from './core/services/socket.service';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [AppComponent],

@@ -1,0 +1,9 @@
+<app-stepper (stepChange)="setActiveStep($event)" [steps]="steps"></app-stepper>
+
+<form *ngSwitch="activeStep" [formGroup]="registerForm">
+  <app-user-info *ngSwitchCase="1" [formGroup]="userInfoForm"></app-user-info>
+  <app-user-verification
+    *ngSwitchCase="2"
+    [formGroup]="userVerificationForm"
+  ></app-user-verification>
+</form>
